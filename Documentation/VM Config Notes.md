@@ -199,4 +199,5 @@
 #### Logon Script
 - Logon Script.bat saved to "C:\Windows\SYSVOL\sysvol\rickyratliff.local\scripts\script.bat"
  
+        net use Y: \\WINSRV201901\Public
         net use F: \\WINSRV201901\Files$
