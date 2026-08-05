@@ -1,57 +1,84 @@
-# Homelab: System and Network Administration Projects
+# Homelab Systems & Network Projects
+
+A showcase repository for two hands-on homelab builds focused on virtualization, Windows domain services, Linux server administration, and network infrastructure. This repo combines a VMware-based Windows domain lab and a bare-metal Proxmox/Linux lab into one portfolio-ready project with a single GitHub link.
 
 ## Overview
-Over the past 2 years, I have been building a virtual Windows domain lab environment using VMware Workstation, ESXi, vSphere, and vCenter. The goal of this project is to learn and gain experience deploying common infrastructure and services. I also use pfSense, a free open source firewall and router to create a closed network 
 
-## Components
-- Virtualization Host: Windows 10 PC
-  - System Model: B450 Tomahawk (MS-7C02)
-  - Processor: AMD Ryzen 5 3600
-  - RAM: 32 GB
-  - Storage: 2100 GB
-    - 1 TB SSD
-    - 100 GB SSD
-    - 1 TB NVMe SSD
-  - Network Interfaces
-    - Eth0: Realtek Gigabit Ethernet NIC 
-    - Eth1: Intel Gigabit Ethernet NIC
-    - Eth2: Intel Gigabit Ethernet NIC
-- Type 2 Hypervisor: VMware Workstation 17
-  - I chose to use VMware Workstation as it allows nested virtualization which was needed for the ESXi hosts.
-- Network
-  - 1 GB Fiber Internet
-  - Wireless Router
-  - pfSense (Lab Host VM)
-- Virtual Machines
-  - ESXi-1
-  - ESXi-2
-    - vSphere, vCenter
-  - pfSense
-  - Windows Server 2019
-    - WINSRV201901
-    - WINSRV201902 
-  - Windows 10
-  - Windows 11
+This repository documents two complementary homelab environments:
 
-## Deployed Windows Services 
-- Active Directory Domain Services
-  - User home folders mapped to hidden network drive
-  - Logon script that maps additional network drives
-  - Powershell script to import new users from .CSV file 
-- Group Policy
-  - Drive mapping for specific security groups
-  - WMI Filters to deploy software depending on system architecture (x86/x64)
-    - O365
-    - Google Chrome
-    - Foxit Reader
-- DNS
-  - Forward and Reverse Lookup Zones for internally hosted resources
+- **Windows Domain Lab** — built on VMware Workstation as a **Type 2 hypervisor** to simulate an enterprise Windows domain environment.
+- **Linux Infrastructure Lab** — built on bare metal with Proxmox as a **Type 1 hypervisor**, Ubuntu Server on an HP t640, and a Brocade switch for network segmentation and lab connectivity.
 
+Together, these projects demonstrate practical experience with virtualization, server roles, DNS, DHCP, directory services, storage, networking, and lab design.
 
-### Work In Progress 
-- DHCP
-  - Scopes and Reservations to seperate servers and clients based on location
-- WDS
-  - Windows 10 and 11 image creation and deployment
-- WSUS 
-  - Centralized management of Windows updates
+## Projects Included
+
+### 1. VMware Windows Domain Lab
+
+This lab was built in VMware Workstation to practice designing and managing a closed Windows environment. It includes Active Directory, DNS, DHCP, Group Policy, file sharing, DFS, WDS, WSUS, and PowerShell-based administration tasks.
+
+**Highlights:**
+
+- VMware Workstation nested virtualization environment.
+- Active Directory Domain Services with multiple domain controllers.
+- DNS and DHCP configuration for domain clients and servers.
+- Group Policy for drive mapping, permissions, and workstation management.
+- DFS namespaces and replication for shared file services.
+- WDS and WSUS for imaging and update management.
+- PowerShell automation for AD user, group, and CSV-based provisioning tasks.
+
+### 2. Proxmox Linux Lab
+
+This lab was built on bare metal with Proxmox as the primary virtualization platform, running alongside Ubuntu Server on the HP t640 and a Brocade switch for network services and segmentation.
+
+**Highlights:**
+
+- Proxmox VE as a **Type 1 hypervisor** for VMs and containers.
+- Ubuntu Server on the HP t640 providing DHCP and BIND9 DNS services.
+- Brocade ICX-6430-C12 switch for lab networking and segmentation.
+- Static IP planning, network scope design, and fixed allocations for lab devices.
+- Proxmox storage, networking, and host configuration documentation.
+- Linux service administration, including DNS forwarding, internal zones, and DHCP integration.
+- Optional infrastructure services such as Grafana, Alloy, Nextcloud, and Jellyfin documented in the lab notes.
+
+## Lab Architecture
+
+| Project | Platform | Purpose |
+|---|---|---|
+| Windows Domain Lab | VMware Workstation | Virtual enterprise Windows environment for AD, DNS, DHCP, GPO, DFS, WDS, WSUS, and PowerShell practice |
+| Linux Infrastructure Lab | Proxmox VE + Ubuntu Server | Bare-metal virtualization and core network services for Linux administration and lab networking |
+
+## Skills Demonstrated
+
+- Virtualization and hypervisor administration.
+- Windows Server infrastructure services.
+- Active Directory and Group Policy management.
+- DNS, DHCP, and network service design.
+- Linux server administration and system configuration.
+- Proxmox VE deployment and storage/network setup.
+- Switch-based lab networking and segmentation.
+- Automation and scripting with PowerShell.
+- Documentation and reproducible lab design.
+
+## Hardware and Platform Summary
+
+### Windows Domain Lab
+
+- VMware Workstation host environment.
+- Windows Server virtual machines and client systems.
+
+### Linux Infrastructure Lab
+
+- Proxmox host on bare metal.
+- HP t640 thin client running Ubuntu Server 24.04 LTS.
+- Brocade ICX-6430-C12 switch for internal lab networking.
+
+## Included Documentation
+
+- Windows Domain Lab notes and project tasks.
+- Proxmox host and Linux service documentation.
+- Network design and device allocation documentation.
+
+## About the Author
+
+This repository reflects an ongoing homelab environment built for learning, experimentation, and hands-on systems administration practice.

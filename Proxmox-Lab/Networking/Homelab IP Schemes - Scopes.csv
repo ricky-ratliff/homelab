@@ -1,0 +1,12 @@
+|                |              |                             |            |             |                               |
+| -------------- | ------------ | --------------------------- | ---------- | ----------- | ----------------------------- |
+| Network Add    | Network Type | Device Type                 | Device QTY | Purpose     | Device Scope                  |
+| 192.168.1.0/24 | WLAN         | Misc Personal Devices       | ~65        | Personal    | 192.168.1.1 – 192.168.1.50    |
+| 192.168.1.0/24 | LAN          | Virtual Machine / Container | 10         | Homelab     | 192.168.1.100 – 192.168.1.120 |
+| 192.168.1.0/24 | LAN          | Virtual Network Appliance   | 5          | Homelab     | 192.168.1.140 – 192.168.1.144 |
+| 192.168.1.0/24 | WLAN         | Emulation Console           | 2          | Homelab     | 192.168.1.200 – 192.168.1.204 |
+| 192.168.1.0/24 | WLAN         | Printers                    | 3          | Personal    | 192.168.1.220 – 192.168.1.229 |
+| 192.168.1.0/24 | LAN          | Physical Server             | 5          | Homelab     | 192.168.1.240 – 192.168.1.249 |
+| 192.168.1.0/24 | LAN          | Physical Network Appliance  | 5          | Homelab     | 192.168.1.250 – 192.168.1.254 |
+| 192.168.1.0/24 | WLAN         | Management Laptop           | 1          | Homelab     | 192.168.1.69                  |
+| 192.168.2.0/24 | WLAN Guest   | Misc Guest Devices          | 253        | Guest Wi-Fi | 192.168.2.1 – 192.168.2.254   |

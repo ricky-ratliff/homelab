@@ -3,11 +3,12 @@
 ## ESXi Host Configs
 
 ### ESXi-1 Configs (Servers)
+
 - VMware Tools Installed: No
 - Storage: 200 GB
 - Memory: 8 GB
 - CPU: 4 vCPUs
-- Network 
+- Network
   - VMware Workstation Host: NAT
   - vmnic0 (Ethernet0)
     - IPv4 Configuration: 192.168.136.130 (static)
@@ -17,6 +18,7 @@
       - DNS suffixes: localdomain, arka.net
 
 #### ESXi-1 Virtual Machines
+
 - WINSRV2012R2DC1
   - VMware Tools Installed: Yes
   - Storage: 80 GB

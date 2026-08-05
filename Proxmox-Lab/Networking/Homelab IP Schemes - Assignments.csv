@@ -1,0 +1,19 @@
+| Node        | IP               | Network Type | NIC MAC           | NIC Name             | Device Type                 | Role                                                                           |
+| ----------- | ---------------- | ------------ | ----------------- | -------------------- | --------------------------- | ------------------------------------------------------------------------------ |
+| nextcloud   | 192.168.1.100    | LAN          | 02:92:31:4e:8b:24 | vmbr0                | Virtual Machine / Container | rksrv-pve nextcloud (VM 100)                                                   |
+| jellyfin    | 192.168.1.101    | LAN          | bc:24:11:08:c4:aa | vmbr0                | Virtual Machine / Container | rksrv-pve jellyfin (VM 101)                                                    |
+| Rknix-arr   | 192.168.1.102    | LAN          | BC:24:11:A6:7E:6A | vmbr0                | Virtual Machine / Container | rksrv-pve *arr stack (VM 102)                                                  |
+| Immich-vm   | 192.168.1.103    | LAN          | BC:24:11:17:75:28 | enp0s18              | Virtual Machine / Container | rksrv-pve immich (VM 103)                                                      |
+| rknix-bat01 | 192.168.1.200    | WLAN         | cc:3d:82:95:27:48 | wlan0                | Emulation Console           | HP Elitedesk 800 G1 DM running Batocera (EmulationStation, RetroArch, Kodi)    |
+| Brother MFC | 192.168.1.220    | WLAN         | 00:41:0e:6d:09:db |                      | Printers                    | Monochrome laser printer                                                       |
+| Brother CDW | 192.168.1.221    | WLAN         | a8:3b:76:f2:87:75 |                      | Printers                    | Color laser printer                                                            |
+| Rollo       | 192.168.1.223    | WLAN         |                   |                      | Printers                    | Shipping label printer                                                         |
+| Rksrv-pve   | 192.168.1.240    | LAN          | b4:2e:99:a5:1d:8f | NIC0 > vmbr0         | Physical Server             | PVE Management                                                                 |
+| Rksrv-pve   | 192.168.1.242    | LAN          | a0:36:9f:a0:2c:07 | NIC2                 | Physical Server             |                                                                                |
+| Rknix-t640  | 192.168.1.244    | LAN          | 7c:d3:0a:78:32:3f | T640 eth0            | Physical Server             | Runs Headscale + Tailscale subnet/edge router ⇄ DMZ                            |
+| Brocade     | 192.168.1.250    | LAN          | 60:9c:9f:38:4b:c8 | Out-Of-Band Mgmt Int | Physical Network Appliance  | Out of band management interface for console access                            |
+| BGW320-505  | 192.168.1.254/24 | WAN & WLAN   | 40:e1:e4:29:58:71 | Fiber                | Physical Network Appliance  | WAN Gateway, Wi-Fi Router (NAT/DHCP), IP Passthrough > T640 (DMZ)              |
+| Rknix-nova  | 192.168.1.69     | WLAN         | bc:09:1b:05:fd:a7 | wlp0s20f3            | Management Laptop           | Homelab Management Laptop                                                      |
+| Rksrv-pve   |                  | LAN          | a0:36:9f:a0:2c:06 | NIC1 > vmbr1         | Physical Server             |                                                                                |
+| Brocade     |                  | LAN          |                   |                      | Physical Network Appliance  | VLAN 10 = 192.168.1.0/24 for Proxmox and lab LAN (gateway 192.168.1.1 on t640) |
+| Brocade     |                  | LAN          |                   |                      | Physical Network Appliance  | VLAN 20 = DMZ subnet (e.g., 10.20.0.0/24, gateway 10.20.0.1 on t640).          |

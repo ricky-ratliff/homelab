@@ -1,0 +1,23 @@
+<!--this file is copied from player2 repo and comment out CSS and JS includes--><!--properties from properties id and attribute data-properties are used in screen.js--><!DOCTYPE html><html><head><meta charset="UTF-8"><!-- For media query to run--><meta name="viewport" content="width=device-width, initial-scale=1"><title>piSignage Player</title><!--each cssFile in htmlWebpackPlugin.files.css--><!--style !{compilation.assets[cssFile.substr(htmlWebpackPlugin.files.publicPath.length)].source()}--><style id="customcss" type="text/css">#main { 
+                            position: absolute; 
+                            top: 150px; 
+                            left: 640px; 
+                            width: 640px; 
+                            height: 510px; 
+                        }
+#side { 
+                            position: absolute; 
+                            top: 150px; 
+                            left: 0px; 
+                            width: 640px; 
+                            height: 510px; 
+                        }
+#bottom { 
+                            position: absolute; 
+                            top: 0px; 
+                            left: 0px; 
+                            width: 1280px; 
+                            height: 150px; 
+                        }</style></head><!--be careful while adding class to body, overwritten in screen.js--><body><div class="zone height-100 width-100 relative" id="full"><div id="main" class="zone">&nbsp;</div>
+<div id="side" class="zone">&nbsp;</div>
+<div id="bottom" class="zone">&nbsp;</div></div><div class="ticker" id="marquee"><span id="tickertext"></span></div><div id="properties" style="display:none;" data-properties="{&quot;resolution&quot;:&quot;720&quot;,&quot;width&quot;:1280,&quot;height&quot;:720,&quot;bgImage&quot;:null,&quot;main&quot;:{&quot;enable&quot;:true,&quot;x&quot;:640,&quot;y&quot;:150,&quot;w&quot;:640,&quot;h&quot;:510},&quot;side&quot;:{&quot;enable&quot;:true,&quot;x&quot;:0,&quot;y&quot;:150,&quot;w&quot;:640,&quot;h&quot;:510,&quot;aliasName&quot;:&quot;side&quot;},&quot;bottom&quot;:{&quot;enable&quot;:true,&quot;x&quot;:0,&quot;y&quot;:0,&quot;w&quot;:1280,&quot;h&quot;:150,&quot;aliasName&quot;:&quot;bottom&quot;},&quot;zone4&quot;:{&quot;enable&quot;:false,&quot;x&quot;:0,&quot;y&quot;:0,&quot;w&quot;:1280,&quot;h&quot;:720,&quot;aliasName&quot;:&quot;zone4&quot;},&quot;zone5&quot;:{&quot;enable&quot;:false,&quot;x&quot;:0,&quot;y&quot;:0,&quot;w&quot;:1280,&quot;h&quot;:720,&quot;aliasName&quot;:&quot;zone5&quot;},&quot;zone6&quot;:{&quot;enable&quot;:false,&quot;x&quot;:0,&quot;y&quot;:0,&quot;w&quot;:1280,&quot;h&quot;:720,&quot;aliasName&quot;:&quot;zone6&quot;},&quot;marquee&quot;:{&quot;enable&quot;:true,&quot;x&quot;:0,&quot;y&quot;:660,&quot;w&quot;:1280,&quot;h&quot;:60}}">&nbsp;</div><div id="clock"></div><div id="qr_code"></div><img id="logo"><div id="emessage"></div><!--h1= htmlWebpackPlugin.files.publicPath--><!--script !{compilation.assets["client.js"].source()}--></body></html>

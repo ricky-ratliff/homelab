@@ -1,0 +1,33 @@
+<mxfile host="65bd71144e">
+    <diagram id="qjIH76tE_8kSDTlZfpUq" name="Page-1">
+        <mxGraphModel dx="639" dy="596" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="19" value="" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.route_table;fillColor=#F58536;gradientColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="620" y="90" width="75" height="69" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.route_table;fillColor=#F58536;gradientColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="520" y="90" width="75" height="69" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="&lt;h1&gt;&lt;font style=&quot;&quot;&gt;Servers&lt;/font&gt;&lt;/h1&gt;" style="swimlane;whiteSpace=wrap;html=1;glass=0;fillColor=#bac8d3;strokeColor=#23445d;startSize=23;rounded=1;shadow=1;" vertex="1" parent="1">
+                    <mxGeometry x="15" y="140" width="475" height="540" as="geometry">
+                        <mxRectangle x="15" y="140" width="140" height="30" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="18" value="&lt;h2&gt;Proxmox Server&lt;/h2&gt;&lt;h3 style=&quot;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: rgb(63, 63, 63);&quot;&gt;Type 1 Hypervisor&lt;/span&gt;&lt;/h3&gt;&lt;p style=&quot;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="rounded=1;arcSize=10;strokeColor=none;fillColor=#DBDBDB;gradientColor=none;verticalAlign=top;html=1;align=center;" vertex="1" parent="21">
+                    <mxGeometry x="25" y="40" width="425" height="480" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="" style="shape=mxgraph.mockup.containers.marginRect;rectMarginTop=10;strokeColor=#666666;strokeWidth=1;dashed=0;rounded=1;arcSize=5;recursiveResize=0;html=1;whiteSpace=wrap;" vertex="1" parent="21">
+                    <mxGeometry x="45" y="190" width="150" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="Group" style="shape=rect;strokeColor=none;fillColor=#008cff;strokeWidth=1;dashed=0;rounded=1;arcSize=20;fontColor=#ffffff;fontSize=17;spacing=2;spacingTop=-2;align=left;autosize=1;spacingLeft=4;resizeWidth=0;resizeHeight=0;perimeter=none;html=1;whiteSpace=wrap;" vertex="1" parent="22">
+                    <mxGeometry x="5" width="90" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://cdn.jsdelivr.net/gh/selfhst/icons@main/svg/proxmox.svg;imageBorder=none;imageBackground=default;comic=0;shadow=1;" vertex="1" parent="21">
+                    <mxGeometry x="45" y="60" width="90" height="90" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
