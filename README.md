@@ -1,6 +1,6 @@
 # Homelab Systems & Network Projects
 
-A showcase repository for two hands-on homelab builds focused on virtualization, Windows domain services, Linux server administration, and network infrastructure. This repo combines a VMware-based Windows domain lab and a bare-metal Proxmox/Linux lab into one portfolio-ready project with a single GitHub link.
+A showcase repository for two hands-on homelab builds focused on virtualization, Windows domain services, Linux server administration, and network infrastructure. This repo contains documentation for a VMware-based Windows domain lab and a bare-metal Proxmox/Linux lab.
 
 ## Overview
 
