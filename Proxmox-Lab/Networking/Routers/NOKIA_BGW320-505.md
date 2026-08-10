@@ -1,6 +1,6 @@
 # NOKIA_BGW320-505
 
-ATT Optical Network Terminal
+AT\&T Optical Network Terminal
 
 ## System Information
 

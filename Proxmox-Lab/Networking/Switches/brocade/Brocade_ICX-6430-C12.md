@@ -2,22 +2,13 @@
 
 This repo contains coniguration notes and documentation for the Brocade ICX 6430-C12 I have deployed in my homelab.
 
-## Table of Contents
+## Project Summary
 
-- [Brocade ICX 6430-C12 Configuration \& Documentation](#brocade-icx-6430-c12-configuration--documentation)
-  - [Table of Contents](#table-of-contents)
-  - [Management Interfaces](#management-interfaces)
-    - [Console Managment Interface](#console-managment-interface)
-      - [OIKWAN USB to RJ45 Console Cable](#oikwan-usb-to-rj45-console-cable)
-    - [Out-of-Band Management Interface](#out-of-band-management-interface)
-    - [Web Management Interface](#web-management-interface)
-  - [Initial Configuration Troubleshooting](#initial-configuration-troubleshooting)
-  - [Software Recovery Process](#software-recovery-process)
-    - [Software recovery on ICX 6430, ICX 6450, ICX 6650, ICX 7450, ICX 7750, and FSX devices](#software-recovery-on-icx-6430-icx-6450-icx-6650-icx-7450-icx-7750-and-fsx-devices)
-      - [Windows PC TFTPd64 Logs](#windows-pc-tftpd64-logs)
-  - [Current Switch Configurations](#current-switch-configurations)
-    - [Boot Monitor](#boot-monitor)
-    - [Running Config](#running-config)
+This was my first physical managed switch. I have worked with virtual networks on various hypervisors, but I knew this was going to be a different process. As expected, I had some issues (and learned a lot) while configuring this switch. I found this 12-port gigabit switch with PoE on eBay for $30 and figured it was worth a shot.
+
+This model is *'End of Life'* according to the Ruckus [web page](https://support.ruckuswireless.com/products/121-ruckus-icx-6430-and-6450-campus-switches#f-product-facet=ICX-6430-6450&f-source=Documentation) for the product. However, they still provide software and documentation downloads as of September 2025.
+
+The best resource for getting this thing up and running was [Jon Sands' website](https://fohdeesha.com/docs/index.html). I highly recommend reading and following along with his Brocade configuration guides carefully.
 
 ## Management Interfaces
 

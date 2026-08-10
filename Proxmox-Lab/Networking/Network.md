@@ -11,6 +11,7 @@
     - [Servers](#servers)
     - [PVE Virtual Machines / Containers](#pve-virtual-machines--containers)
     - [Network Appliances](#network-appliances)
+    - [Ring System](#ring-system)
     - [Printers](#printers)
     - [Streaming / Roku Devices](#streaming--roku-devices)
     - [Other Clients](#other-clients)
@@ -40,6 +41,7 @@ This table is used to document the scopes/blocks of addresses reserved for the v
 | 192.168.1.0/24 | LAN          | Virtual Network Appliance   | 5          | Homelab     | 192.168.1.140 – 192.168.1.144 |
 | 192.168.1.0/24 | WLAN         | Emulation Console           | 5          | Homelab     | 192.168.1.200 – 192.168.1.204 |
 | 192.168.1.0/24 | WLAN         | Chromeboxes (Backline,etc)  | 5          | Homelab     | 192.168.1.205 - 192.168.1.209 |
+| 192.168.1.0/24 | LAN & WLAN   | Ring System                 | 10         | Personal    | 192.168.1.210 - 192.168.1.220 |
 | 192.168.1.0/24 | WLAN         | Printers                    | 10         | Personal    | 192.168.1.220 – 192.168.1.229 |
 | 192.168.1.0/24 | LAN          | Physical Server             | 10         | Homelab     | 192.168.1.240 – 192.168.1.249 |
 | 192.168.1.0/24 | LAN          | Physical Network Appliance  | 5          | Homelab     | 192.168.1.250 – 192.168.1.254 |
@@ -77,9 +79,16 @@ This table is used to document the scopes/blocks of addresses reserved for the v
 | Node        | IP               | Network      | NIC MAC           | NIC Name             | Device Type                 | Role                                                                           |
 | ----------- | ---------------- | ------------ | ----------------- | -------------------- | --------------------------- | ------------------------------------------------------------------------------ |
 | Brocade     | 192.168.1.250    | LAN          | 60:9c:9f:38:4b:c8 | Out-Of-Band Mgmt Int | Physical Network Appliance  | Out of band management interface for console access                            |
-| BGW320-505  | 192.168.1.254    | WAN & WLAN   | 40:e1:e4:29:58:71 | Fiber                | Physical Network Appliance  | WAN Gateway, Wi-Fi Router (NAT/DHCP), IP Passthrough > T640 (DMZ)              |
 | Brocade     |                  | LAN          |                   |                      | Physical Network Appliance  | VLAN 10 = 192.168.1.0/24 for Proxmox and lab LAN (gateway 192.168.1.1 on t640) |
 | Brocade     |                  | LAN          |                   |                      | Physical Network Appliance  | VLAN 20 = DMZ subnet (e.g., 10.20.0.0/24, gateway 10.20.0.1 on t640).          |
+| BGW320-505  | 192.168.1.254    | WAN & WLAN   | 40:e1:e4:29:58:71 | Fiber                | Physical Network Appliance  | WAN Gateway, Wi-Fi Router (NAT/DHCP), IP Passthrough > T640 (DMZ)              |
+
+### Ring System
+
+| Node                  | IP               | Network      | NIC MAC           | NIC Name             | Device Type                 | Role                                                         |
+| --------------------- | ---------------- | ------------ | ----------------- | -------------------- | --------------------------- | ------------------------------------------------------------ |
+| Ring-BaseStation-D199 | 192.168.1.210    | LAN          | B0:09:DA:73:D1:99 | Ethernet             | Ring System                 | Provides network and Z Wave connectivity to Ring devices     |
+|
 
 ### Printers
 
@@ -93,6 +102,7 @@ This table is used to document the scopes/blocks of addresses reserved for the v
 
 | Node         | IP            | Network | NIC MAC           | NIC Name   | Device Type                 | Role                            |
 | -----------  | --------------| ------- | ----------------- | -----------| --------------------------- | ------------------------------- |
+| LivingRoom   | 192.168.1.70  | WLAN    | c4:98:5c:f6:21:6b |            | TCL Roku TV                 | Streaming Client                |
 | RickyandKara | 192.168.1.74  | WLAN    | d0:12:55:d4:62:c5 |            | TCL Roku TV                 | Streaming Client                |
 
 ### Other Clients

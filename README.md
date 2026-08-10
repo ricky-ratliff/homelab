@@ -1,6 +1,6 @@
 # Homelab Systems & Network Projects
 
-A showcase repository for two hands-on homelab builds focused on virtualization, Windows domain services, Linux server administration, and network infrastructure. This repo contains documentation for a VMware-based Windows domain lab and a bare-metal Proxmox/Linux lab.
+A showcase repository for two hands-on homelab builds focused on virtualization, Windows domain services, Linux server administration, and network infrastructure. This repo documents a VMware-based Windows domain lab and a bare-metal Proxmox/Linux lab, with notes on systems, networking, monitoring, storage, and service design.
 
 ## Overview
 
@@ -82,3 +82,4 @@ This lab was built on bare metal with Proxmox as the primary virtualization plat
 ## About the Author
 
 This repository reflects an ongoing homelab environment built for learning, experimentation, and hands-on systems administration practice.
+- Network design and device IP allocation documentation.
