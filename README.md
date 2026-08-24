@@ -6,28 +6,14 @@ A showcase repository for two hands-on homelab builds focused on virtualization,
 
 This repository documents two complementary homelab environments:
 
-- **Windows Domain Lab** — built on VMware Workstation as a **Type 2 hypervisor** to simulate an enterprise Windows domain environment.
-- **Linux Infrastructure Lab** — built on bare metal with Proxmox as a **Type 1 hypervisor**, Ubuntu Server on an HP t640, and a Brocade switch for network segmentation and lab connectivity.
+- [Linux Infrastructure Lab](./Proxmox-Lab/proxmox-homelab.md): built on bare metal with Proxmox as a **Type 1 hypervisor**, Ubuntu Server on an HP t640, and a Brocade switch for network segmentation and lab connectivity.
+- [Windows Domain Lab](./vmWare-Lab/Documentation/VM%20Config%20Notes.md): built on VMware Workstation as a **Type 2 hypervisor** to simulate an enterprise Windows domain environment.
 
 Together, these projects demonstrate practical experience with virtualization, server roles, DNS, DHCP, directory services, storage, networking, and lab design.
 
 ## Projects Included
 
-### 1. VMware Windows Domain Lab
-
-This lab was built in VMware Workstation to practice designing and managing a closed Windows environment. It includes Active Directory, DNS, DHCP, Group Policy, file sharing, DFS, WDS, WSUS, and PowerShell-based administration tasks.
-
-**Highlights:**
-
-- VMware Workstation nested virtualization environment.
-- Active Directory Domain Services with multiple domain controllers.
-- DNS and DHCP configuration for domain clients and servers.
-- Group Policy for drive mapping, permissions, and workstation management.
-- DFS namespaces and replication for shared file services.
-- WDS and WSUS for imaging and update management.
-- PowerShell automation for AD user, group, and CSV-based provisioning tasks.
-
-### 2. Proxmox Linux Lab
+### 1. Proxmox Linux Lab
 
 This lab was built on bare metal with Proxmox as the primary virtualization platform, running alongside Ubuntu Server on the HP t640 and a Brocade switch for network services and segmentation.
 
@@ -40,6 +26,20 @@ This lab was built on bare metal with Proxmox as the primary virtualization plat
 - Proxmox storage, networking, and host configuration documentation.
 - Linux service administration, including DNS forwarding, internal zones, and DHCP integration.
 - Optional infrastructure services such as Grafana, Alloy, Nextcloud, and Jellyfin documented in the lab notes.
+
+### 2. VMware Windows Domain Lab
+
+This lab was built in VMware Workstation to practice designing and managing a closed Windows environment. It includes Active Directory, DNS, DHCP, Group Policy, file sharing, DFS, WDS, WSUS, and PowerShell-based administration tasks.
+
+**Highlights:**
+
+- VMware Workstation nested virtualization environment.
+- Active Directory Domain Services with multiple domain controllers.
+- DNS and DHCP configuration for domain clients and servers.
+- Group Policy for drive mapping, permissions, and workstation management.
+- DFS namespaces and replication for shared file services.
+- WDS and WSUS for imaging and update management.
+- PowerShell automation for AD user, group, and CSV-based provisioning tasks.
 
 ## Lab Architecture
 
@@ -62,23 +62,19 @@ This lab was built on bare metal with Proxmox as the primary virtualization plat
 
 ## Hardware and Platform Summary
 
-### Windows Domain Lab
-
-- VMware Workstation host environment.
-- Windows Server virtual machines and client systems.
-
 ### Linux Infrastructure Lab
 
 - Proxmox host on bare metal.
 - HP t640 thin client running Ubuntu Server 24.04 LTS.
 - Brocade ICX-6430-C12 switch for internal lab networking.
 
+### Windows Domain Lab
+
+- VMware Workstation host environment.
+- Windows Server virtual machines and client systems.
+
 ## Included Documentation
 
-- Windows Domain Lab notes and project tasks.
 - Proxmox host and Linux service documentation.
 - Network design and device allocation documentation.
-
-## About the Author
-
-This repository reflects an ongoing homelab environment built for learning, experimentation, and hands-on systems administration practice.
+- Windows Domain Lab notes and project tasks.
