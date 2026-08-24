@@ -44,7 +44,7 @@ This lab was built on bare metal with Proxmox as the primary virtualization plat
 ## Lab Architecture
 
 | Project | Platform | Purpose |
-|---|---|---|
+| --- | --- | --- |
 | Windows Domain Lab | VMware Workstation | Virtual enterprise Windows environment for AD, DNS, DHCP, GPO, DFS, WDS, WSUS, and PowerShell practice |
 | Linux Infrastructure Lab | Proxmox VE + Ubuntu Server | Bare-metal virtualization and core network services for Linux administration and lab networking |
 
@@ -82,4 +82,3 @@ This lab was built on bare metal with Proxmox as the primary virtualization plat
 ## About the Author
 
 This repository reflects an ongoing homelab environment built for learning, experimentation, and hands-on systems administration practice.
-- Network design and device IP allocation documentation.

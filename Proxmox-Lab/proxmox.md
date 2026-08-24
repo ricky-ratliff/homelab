@@ -147,8 +147,8 @@ Add-ADGroupMember -Identity "Example Group" -Members "Example User"
 Planned work focuses on expanding reliability, security, and automation:
 
 - [x] Create and validate ZFS pools/datasets and expose storage through Proxmox configuration.
-- [ ] Implement scheduled backups, restore testing, and documented recovery objectives.
 - [x] Complete DMZ segmentation and firewall policy enforcement on the Ubuntu infrastructure node.
+- [ ] Implement scheduled backups, restore testing, and documented recovery objectives.
 - [ ] Build a VPN gateway/container to isolate selected outbound traffic from the Proxmox host.
 - [ ] Expand Grafana dashboards and telemetry collection for network equipment, hosts, and guest workloads.
 - [ ] Automate baseline Linux configuration with Ansible, including Netplan, DNS, DHCP, and SSH configuration.
@@ -166,10 +166,3 @@ This homelab is a practical demonstration of my ability to:
 - Troubleshoot services across network, operating system, and application layers.
 - Use automation and documentation to make infrastructure supportable by more than one person.
 - Apply enterprise concepts in a self-directed environment while continuously improving reliability and security.
-
-## Contact
-
-I welcome discussion with hiring managers, recruiters, and technical teams regarding systems administration, infrastructure support leadership, virtualization, Linux administration, automation, and network operations.
-
-- LinkedIn: `https://www.linkedin.com/in/<your-profile>`
-- Email: `<your-email>`
